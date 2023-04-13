@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import wandb
-from sklearn.metrics import accuracy_score, recall_score, precision_score
+from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
 
 data = pd.read_csv("bhutan_landslide_data.csv")
 data.drop(['FID', 'Type', 'TWI'], axis=1, inplace=True)
